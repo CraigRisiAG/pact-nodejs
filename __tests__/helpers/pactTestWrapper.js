@@ -1,5 +1,5 @@
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000
+jest.setTimeout(30000)
 
-beforeAll(() => provider.setup())
+beforeAll(() => global.provider.setup())
 
-afterAll(() => provider.finalize())
+afterAll(() => global.provider.finalize())
