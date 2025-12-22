@@ -9,18 +9,21 @@ describe("Clients Service", () => {
         "firstName": "Anakin",
         "lastName": "Skywalker",
         "age": 16,
+        "profession": "Jedi Padawan",
         "id": 1
     },
     {
         "firstName": "Luke",
         "lastName": "Skywalker",
         "age": 25,
+        "profession": "Jedi Master",
         "id": 2
     },
     {
         "firstName": "Obiwan",
         "lastName": "Kenobi",
         "age": 49,
+        "profession": "Jedi Master",
         "id": 3
     }]
 
@@ -29,8 +32,8 @@ describe("Clients Service", () => {
     describe("GET Clients", () => {
         beforeEach(() => {
             const interaction = {
-                state: "i have a list of clients",
-                uponReceiving: "a request for all clients",
+                state: "I have a list of clients",
+                uponReceiving: "A request for all clients",
                 withRequest: {
                     method: "GET",
                     path: "/clients",
@@ -58,9 +61,9 @@ describe("Clients Service", () => {
     })
 
     const POST_BODY = {
-        firstName: "Rafaela",
-        lastName: "Azevedo",
-        age: 29
+        firstName: "Craig",
+        lastName: "Risi",
+        age: 21 //A person can still dream okay :D
     }
 
     const POST_EXPECTED_BODY = {
@@ -73,8 +76,8 @@ describe("Clients Service", () => {
     describe("POST Client", () => {
         beforeEach(() => {
             const interaction = {
-                state: "i create a new client",
-                uponReceiving: "a request to create client with firstname and lastname",
+                state: "I create a new client",
+                uponReceiving: "A request to create client with firstname and lastname",
                 withRequest: {
                     method: "POST",
                     path: "/clients",

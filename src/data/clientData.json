@@ -3,18 +3,21 @@
         "firstName": "Anakin",
         "lastName": "Skywalker",
         "age": 16,
+        "profession": "Jedi Padawan",
         "id": 1
     },
     {
         "firstName": "Luke",
         "lastName": "Skywalker",
         "age": 25,
+        "profession": "Jedi Master",
         "id": 2
     },
     {
         "firstName": "Obiwan",
         "lastName": "Kenobi",
         "age": 49,
+        "profession": "Jedi Master",
         "id": 3
     }
 ]

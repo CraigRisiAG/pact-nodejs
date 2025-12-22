@@ -24,7 +24,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"firstName\":\"Rafaela\",\"lastName\":\"Azevedo\",\"age\":29}",
+					"raw": "{\"firstName\":\"Craig\",\"lastName\":\"Risi\",\"age\":21}",
 					"options": {
 						"raw": {
 							"language": "json"

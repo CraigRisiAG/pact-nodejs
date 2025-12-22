@@ -19,19 +19,22 @@
             "age": 16,
             "firstName": "Anakin",
             "id": 1,
-            "lastName": "Skywalker"
+            "lastName": "Skywalker",
+            "profession": "Jedi Padawan"
           },
           {
             "age": 25,
             "firstName": "Luke",
             "id": 2,
-            "lastName": "Skywalker"
+            "lastName": "Skywalker",
+            "profession": "Jedi Master"
           },
           {
             "age": 49,
             "firstName": "Obiwan",
             "id": 3,
-            "lastName": "Kenobi"
+            "lastName": "Kenobi",
+            "profession": "Jedi Master"
           }
         ],
         "headers": {
