@@ -15,10 +15,10 @@ server.listen(8081, () => {
             provider: "Clients Service",
             logLevel: "DEBUG",
             providerBaseUrl: SERVER_URL,
-            pactUrls: ['http://localhost:8080/pacts/provider/ClientsService/consumer/Frontend/latest'],
+            pactUrls: [path.resolve(__dirname, '../pacts/frontend-clientsservice.json')],
             consumerVersionTags: ["dev"],
             providerVersionTags: ["dev"],
-            publishVerificationResult: true,
+            publishVerificationResult: false,
             providerVersion: "1.0.1"
           }
         return new Verifier(opts).verifyProvider().then(output => {
