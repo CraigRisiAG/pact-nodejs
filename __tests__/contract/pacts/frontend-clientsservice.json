@@ -4,8 +4,8 @@
   },
   "interactions": [
     {
-      "description": "a request for all clients",
-      "providerState": "i have a list of clients",
+      "description": "A request for all clients",
+      "providerState": "I have a list of clients",
       "request": {
         "headers": {
           "Accept": "application/json, text/plain, */*"

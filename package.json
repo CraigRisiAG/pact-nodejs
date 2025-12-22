@@ -23,6 +23,7 @@
   "license": "MIT",
   "devDependencies": {
     "@pact-foundation/pact": "^12.1.0",
+    "@pact-foundation/pact-node": "^10.16.0",
     "axios": "^1.13.2",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",

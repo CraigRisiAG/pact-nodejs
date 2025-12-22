@@ -63,14 +63,16 @@ describe("Clients Service", () => {
     const POST_BODY = {
         firstName: "Craig",
         lastName: "Risi",
-        age: 21 //A person can still dream okay :D
+        age: 21, //A person can still dream okay :D
+        profession: "Software Engineer"
     }
 
     const POST_EXPECTED_BODY = {
         firstName: POST_BODY.firstName,
         lastName: POST_BODY.lastName,
         age: POST_BODY.age,
-        id: 3
+        profession: POST_BODY.profession,
+        id: 4
     }
 
     describe("POST Client", () => {
@@ -81,14 +83,11 @@ describe("Clients Service", () => {
                 withRequest: {
                     method: "POST",
                     path: "/clients",
-                    headers: {
-                        "Content-Type": "application/json;charset=utf-8"
-                    },
                     body: POST_BODY,
                 },
                 willRespondWith: {
                     status: 200,
-                    body: Matchers.like(POST_EXPECTED_BODY).contents,
+                    body: POST_EXPECTED_BODY,
                 },
             }
 
@@ -98,7 +97,7 @@ describe("Clients Service", () => {
         test("returns correct body, header and statusCode", async() => {
             const response = await postClient(POST_BODY)
             console.log(response.data)
-            expect(response.data.id).toEqual(3)
+            expect(response.data.id).toEqual(4)
             expect(response.status).toEqual(200)
         })
     })
