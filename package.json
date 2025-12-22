@@ -1,5 +1,5 @@
 {
-  "name": "tau-pact-nodejs-course",
+  "name": "pact-nodejs-workshop",
   "version": "1.0.0",
   "description": "A simple Nodejs + jest project configuring contract tests with PactJS",
   "main": "src/index.js",
@@ -10,10 +10,6 @@
     "test:provider": "jest __tests__/contract/provider --runInBand --force-exit",
     "publish:contract": "node ./__tests__/helpers/publish.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rafaelaazevedo/tau-pact-nodejs-course.git"
-  },
   "keywords": [
     "nodejs",
     "contract-tests",
@@ -23,7 +19,7 @@
     "course",
     "tau"
   ],
-  "author": "Craig Risi",
+  "author": "Rafeala Azevedo/Craig Risi",
   "license": "MIT",
   "devDependencies": {
     "@pact-foundation/pact": "^9.7.0", 
