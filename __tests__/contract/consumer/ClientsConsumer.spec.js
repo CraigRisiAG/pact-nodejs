@@ -6,21 +6,21 @@ const { getClients, postClient } = require("../../../src/consumer")
 
 describe("Clients Service", () => {
     const GET_EXPECTED_BODY = [{
-        "firstName": "Lisa",
-        "lastName": "Simpson",
-        "age": 8,
+        "firstName": "Anakin",
+        "lastName": "Skywalker",
+        "age": 16,
         "id": 1
     },
     {
-        "firstName": "Wonder",
-        "lastName": "Woman",
-        "age": 30,
+        "firstName": "Luke",
+        "lastName": "Skywalker",
+        "age": 25,
         "id": 2
     },
     {
-        "firstName": "Homer",
-        "lastName": "Simpson",
-        "age": 39,
+        "firstName": "Obiwan",
+        "lastName": "Kenobi",
+        "age": 49,
         "id": 3
     }]
 
