@@ -10,7 +10,7 @@ const getClients = async () => {
       return res
     })
     .catch((err) => {
-      return err.res
+      return err.response
     })
   return res
 }
@@ -22,7 +22,7 @@ const getClient = async (id) => {
           return res;
         })
         .catch((err) => {
-          return err.res
+          return err.response
         })
     return res
 }
@@ -34,7 +34,7 @@ const postClient = async (body) => {
           return res
         })
         .catch((err) => {
-          return err.res
+          return err.response
         })
     return res
 }

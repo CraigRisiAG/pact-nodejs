@@ -1,5 +1,13 @@
 jest.setTimeout(30000)
 
-beforeAll(() => global.provider.setup())
+beforeAll(async () => {
+	if (global.provider && typeof global.provider.setup === 'function') {
+		await global.provider.setup()
+	}
+})
 
-afterAll(() => global.provider.finalize())
+afterAll(async () => {
+	if (global.provider && typeof global.provider.finalize === 'function') {
+		await global.provider.finalize()
+	}
+})

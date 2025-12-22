@@ -5,6 +5,11 @@ const { getClients, postClient } = require("../../../src/consumer")
 
 
 describe("Clients Service", () => {
+    const provider = new (require("@pact-foundation/pact").Pact)({
+        consumer: "ClientsConsumer",
+        provider: "ClientsProvider",
+    })
+
     const GET_EXPECTED_BODY = [{
         "firstName": "Anakin",
         "lastName": "Skywalker",
